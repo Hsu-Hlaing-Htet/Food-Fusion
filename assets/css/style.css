@@ -1,0 +1,297 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body { 
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.active{
+    color: #800020;
+    font-weight: bold;
+}
+
+/* start navbar */
+
+/* end navbar */
+
+/* accordion  */
+.accordion-com {
+    width: 100%;
+    padding: 20px;
+    /* max-width: 800px; */
+    margin: auto;
+}
+
+.accordion {
+    width: 100%;
+}
+
+.accordion .acctitle {
+    color: #000;
+    /* background-color: #FFF5E1;  */
+    border-left: 5px solid #800020;
+
+    font-size: 18px;
+    padding: 22px;
+    margin: 0;
+
+}
+
+.accordion .acctitle:hover,
+.accordion .acctitle.active {
+    color: #800020;
+    background-color: #EBE6DA;
+    border-left: 5px solid #800020;
+    /* border-left: 5px solid #FF7043; */
+
+}
+
+.accordion .acctitle::after {
+    content: "\f078"; /* FontAwesome down arrow */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    right: 20px;
+}
+
+.accordion .acctitle.active::after {
+    content: "\f077"; /* FontAwesome up arrow */
+}
+
+.acccontent {
+    height: 0;
+    padding: 0 10px;
+    text-indent: 20px;
+    /* background-color: #FFF5E1; */
+    overflow: hidden;
+}
+
+.acccontent p {
+    padding: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+    text-indent: 0px;
+}
+
+.acccontent ul {
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+.acccontent ul li {
+    text-decoration: none;
+    list-style-type: disc;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+
+/* end Accordion  */
+
+/* start timeline  */
+
+.timeline {
+    margin: 0 auto;
+    position: relative;
+}
+
+.timeline::after {
+    content: "";
+    width: 6px;
+    height: 100%;
+    background-color: #800020;
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+
+.boxes {
+    width: 50%;
+    /* background-color: #800020; */
+
+    padding: 10px 40px;
+    position: relative;
+}
+
+.boxes::after {
+    content: "";
+
+    width: 20px;
+    height: 20px;
+    background-color: #800020;
+    border-radius: 3px;
+
+    position: absolute;
+    right: -13px;
+    top: 20px;
+
+    z-index: 10;
+}
+
+.content {
+    background-color: #EBE6DA;
+    color: #800020;
+    padding: 20px 30px;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    left: 50%;
+}
+
+.left::before {
+    content: '';
+
+    width: 0;
+    height: 0;
+    /* background-color: red; */
+
+    position: absolute;
+    right: 30px;
+    top: 20px;
+
+    border-width: 10px 0 10px 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #EBE6DA;
+
+}
+
+.right::before {
+    content: '';
+
+    width: 0;
+    height: 0;
+    /* background-color: red; */
+
+    position: absolute;
+    left: 30px;
+    top: 20px;
+
+    border-width: 10px 10px 10px 0;
+    border-style: solid;
+    border-color: transparent #EBE6DA transparent transparent;
+}
+
+.right::after {
+    left: -5px;
+}
+
+/* Color changes when clicked */
+.boxes.clicked .content {
+    background-color: #EBE6DA;
+    color: #B91C1C;
+}
+
+.boxes.clicked .content h3,
+.boxes.clicked .content small,
+.boxes.clicked .content p {
+    color: #B91C1C;
+}
+
+
+/* Custom scrollbar styling */
+.flex::-webkit-scrollbar {
+    height: 6px;
+}
+
+.flex::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.flex::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+.flex::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+#slider {
+    display: flex;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    /* Prevents layout jumps */
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+.recipe-card {
+    flex-shrink: 0;
+    scroll-snap-align: center;
+    transition: transform 0.3s ease;
+    margin-right: 16px;
+    /* Space between cards */
+}
+
+/* Mobile  */
+@media (max-width: 768px) {
+
+    /* start banner section  */
+    .banner-con {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    /* end banner section  */
+
+    /* start lastest receipe */
+    .receipe-card {
+        width: 100%;
+        height: 150px;
+    }
+
+    /* end lastest receipe */
+
+    /* start popular receipe */
+    .popular-card {
+        width: 100%;
+        height: 150px;
+    }
+
+    /* end popular receipe */
+
+    #login-message {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+}
+
+/* animation  */
+
+/* destop */
+@media (min-width: 769px) {
+
+    /* start lastest receipe */
+    .receipe-card {
+        width: 250px;
+        height: 300px;
+        border-radius: 50px 15px;
+        gap: 6px;
+
+    }
+
+    .popular-card{
+        width: 200px;
+        height: 300px;
+    } 
+
+    /* end lastest receipe */
+
+    .timeline {
+        width: 800px;
+    }
+}
