@@ -1,20 +1,20 @@
-# 🍽️ FoodFusion – Culinary Community Web Application
+#  FoodFusion – Culinary Community Web Application
 
 FoodFusion is a culinary platform built to inspire home cooking and creative food experiences. This full-featured web application serves as a central hub for recipe sharing, community interaction, and culinary education.
 
-## 📌 Project Overview
+##  Project Overview
 
 This project was developed for FoodFusion to promote culinary creativity through a responsive, user-friendly website. Users can explore global recipes, contribute to a community cookbook, and access downloadable culinary resources.
 
 ---
 
-## ✨ Features
+##  Features
 -  **Fully Responsive Design**: Works seamlessly across desktops, tablets, and smartphones.  
 -  **Cookie Consent Banner**: Ensures compliance with data privacy policies.  
 -  **Social Media Integration**: Links to platforms like Facebook, YouTube, and Instagram.  
 -  **Privacy Policy Page**: Transparency in how user data is handled.
 
-## 🚩 Key Features
+##  Key Features
 
 - **Responsive Design:** Optimized for desktops, tablets, and mobile devices for seamless user experience.  
 - **Community Cookbook:** Allows users to submit, share, and discover recipes from diverse cuisines.  
@@ -24,12 +24,12 @@ This project was developed for FoodFusion to promote culinary creativity through
 - **Admin Dashboard:** Provides administrators with tools to manage users, recipes, and site content effectively.  
 - **Privacy Compliance:** Cookie consent banner and dedicated privacy policy page to ensure transparency and legal compliance.  
 
-### 🔸 General
+###  General
 - Fully responsive and accessible design
 - Cookie consent notification and privacy policy display
 - Integrated social media links
 
-### 🔸 Core Pages
+###  Core Pages
 - **Homepage**
   - Mission statement
   - "Join Us" pop-up form (First Name, Last Name, Email, Password)
@@ -55,13 +55,13 @@ This project was developed for FoodFusion to promote culinary creativity through
 - **Educational Resources**
   - Infographics and videos on renewable energy topics
 
-### 🔐 Security
+###  Security
 - User registration and login system
 - Account lockout after 3 failed login attempts (auto-unlock after 3 minutes)
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer      | Technology       |
 |------------|------------------|
@@ -146,7 +146,7 @@ FoodFusion/
 └── README.md                 # Project documentation
 ```
 
-## 🛠️ Admin Side Description
+##  Admin Side Description
 
 The admin panel provides tools for managing the platform content and users:
 
